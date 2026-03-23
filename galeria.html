@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doble Click | Galería</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="LOGO_DOBLE_CLICK-removebg-preview.png">
+    <link rel="stylesheet" href="comun.css">
+    <link rel="stylesheet" href="galeria.css">
+    
+   
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <div class="social-bar pulse-animation">
+        <a href="https://www.facebook.com/" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/" target="_blank" class="icon twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 border-0 shadow-sm fixed-top" style="z-index: 1030;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="LOGO_DOBLE_CLICK-removebg-preview.png" alt="Logo Doble Click" height="60" class="d-inline-block align-text-top logo-nav">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fs-5">
+                    <li class="nav-item mx-2"><a class="nav-link" href="index.html">Inicio</a></li>
+                    
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarProductos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu shadow border-0 mt-2 fade-in-dropdown" aria-labelledby="navbarProductos">
+                            <li><a class="dropdown-item" href="LAPTOP.HTML"><i class="bi bi-laptop me-2"></i>Laptops</a></li>
+                            <li><a class="dropdown-item" href="PC.HTML"><i class="bi bi-pc-display me-2"></i>PCs Armadas</a></li>
+                            <li><a class="dropdown-item" href="COMPONENTE.HTML"><i class="bi bi-cpu me-2"></i>Componentes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item mx-2"><a class="nav-link active" href="galeria.html">Galería</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="servicio.html">Servicio Técnico</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="QuienesSomos.html">¿Quiénes somos?</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="menu-wave">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #212529;"></path>
+            </svg>
+        </div>
+    </nav>
+       
+    <div class="bg-dark text-white text-center py-5 position-relative">
+        <div class="container position-relative z-index-1">
+            <br> <br> <br>
+            <h1 class="display-4 fw-bold">Nuestra Galería</h1>
+            <p class="lead text-light opacity-75">El detalle, la calidad y el rendimiento vistos de cerca.</p>
+        </div>
+        <div style="height: 50px; overflow: hidden; background-color: transparent; position: absolute; bottom: 0; left: 0; width: 100%;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path>
+            </svg>
+        </div>
+    </div>
+
+    <main class="container my-5 contenido-galeria flex-grow-1 overflow-hidden">
+        
+        <section class="video-section mb-5 pb-5 border-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 hover-zoom-container" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg border border-4 border-white">
+                        <video class="w-100 object-fit-cover video-hover" autoplay loop muted playsinline>
+                            <source src="compus.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-lg-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <span class="badge bg-primary mb-2 px-3 py-2 shadow-sm">Experiencia Visual</span>
+                    <h2 class="fw-bold mb-3 text-dark">Equipos en Acción</h2>
+                    <p class="lead text-secondary">Armamos setups profesionales que no solo lucen increíbles, sino que rinden al máximo nivel.</p>
+                    
+                    <div class="row mt-4 g-3">
+                        <div class="col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="d-flex align-items-center info-card p-3 rounded-3">
+                                <div class="bg-light p-2 rounded-circle me-3 text-primary shadow-sm"><i class="bi bi-controller fs-4"></i></div>
+                                <div><h6 class="mb-0 fw-bold">Gaming</h6><small class="text-muted">Componentes Top</small></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="d-flex align-items-center info-card p-3 rounded-3">
+                                <div class="bg-light p-2 rounded-circle me-3 text-primary shadow-sm"><i class="bi bi-briefcase fs-4"></i></div>
+                                <div><h6 class="mb-0 fw-bold">Oficina</h6><small class="text-muted">Eficiencia pura</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section mb-5 pb-5 border-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-6 px-lg-4 order-2 order-lg-1 mt-4 mt-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="badge bg-success mb-2 px-3 py-2 shadow-sm">Soporte Especializado</span>
+                    <h2 class="fw-bold mb-3 text-dark">Mantenimiento y Cuidado</h2>
+                    <p class="lead text-secondary">Prolonga la vida útil de tus componentes con nuestro servicio preventivo.</p>
+                    
+                    <div class="row mt-4 g-3">
+                        <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="d-flex align-items-center info-card p-3 rounded-3">
+                                <div class="bg-light p-2 rounded-circle me-3 text-success shadow-sm"><i class="bi bi-thermometer-half fs-4"></i></div>
+                                <div><h6 class="mb-0 fw-bold">Refrigeración</h6><small class="text-muted">Temperaturas óptimas</small></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="d-flex align-items-center info-card p-3 rounded-3">
+                                <div class="bg-light p-2 rounded-circle me-3 text-success shadow-sm"><i class="bi bi-tools fs-4"></i></div>
+                                <div><h6 class="mb-0 fw-bold">Limpieza</h6><small class="text-muted">Cero polvo</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0 order-1 order-lg-2 hover-zoom-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg border border-4 border-white">
+                        <video class="w-100 object-fit-cover video-hover" autoplay loop muted playsinline>
+                            <source src="mantenimiento.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 pb-5 border-bottom">
+            <div class="text-center mb-5" data-aos="fade-down">
+                <h2 class="fw-bold text-dark">Setups Destacados</h2>
+                <div class="mx-auto bg-primary mt-2" style="height: 3px; width: 60px;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="flip-left" data-aos-duration="1200">
+                    <div class="card bg-dark text-white border-0 overflow-hidden rounded-4 setup-card shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1600861194942-f883de0dfe96?w=800&h=400&fit=crop" class="card-img setup-img" alt="Setup Minimalista">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end setup-overlay">
+                            <h4 class="card-title fw-bold mb-1">Setup Minimalista</h4>
+                            <p class="card-text mb-0">Limpio, elegante y potente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="flip-right" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="card bg-dark text-white border-0 overflow-hidden rounded-4 setup-card shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=400&fit=crop" class="card-img setup-img" alt="Setup Gamer">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end setup-overlay">
+                            <h4 class="card-title fw-bold mb-1">Battle Station Gamer</h4>
+                            <p class="card-text mb-0">Máximo RGB y rendimiento extremo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="text-center mb-5" data-aos="zoom-in">
+                <h2 class="fw-bold text-dark">Catálogo Completo</h2>
+                <div class="mx-auto bg-primary mt-2" style="height: 3px; width: 60px;"></div>
+            </div>
+            
+            <div class="row g-4 align-items-center text-center">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="LAPTOP.HTML" class="text-decoration-none text-dark">
+                        <div class="card border-0 bg-transparent h-100 galeria-card">
+                            <div class="overflow-hidden rounded-4 shadow-sm mb-3">
+                                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&h=400&fit=crop" class="img-fluid demo-img w-100" alt="Laptop">
+                            </div>
+                            <h5 class="fw-bold mb-0">Laptops</h5>
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="PC.HTML" class="text-decoration-none text-dark">
+                        <div class="card border-0 bg-transparent h-100 galeria-card">
+                            <div class="overflow-hidden rounded-4 shadow-sm mb-3">
+                                <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=500&h=400&fit=crop" class="img-fluid demo-img w-100" alt="Gamers">
+                            </div>
+                            <h5 class="fw-bold mb-0">Gamers</h5>
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <a href="COMPONENTE.HTML" class="text-decoration-none text-dark">
+                        <div class="card border-0 bg-transparent h-100 galeria-card">
+                            <div class="overflow-hidden rounded-circle shadow-sm mb-3 mx-auto" style="width: 200px; height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=400&h=400&fit=crop" class="img-fluid demo-img h-100 w-100" alt="Dispositivos">
+                            </div>
+                            <h5 class="fw-bold mb-0 mt-2">Dispositivos</h5>
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <a href="COMPONENTE.HTML" class="text-decoration-none text-dark">
+                        <div class="card border-0 bg-transparent h-100 galeria-card">
+                            <div class="overflow-hidden rounded-4 shadow-sm mb-3">
+                                <img src="monitor.jpg" class="img-fluid demo-img w-100" alt="Monitores">
+                            </div>
+                            <h5 class="fw-bold mb-0">Monitores</h5>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <a href="COMPONENTE.HTML" class="text-decoration-none text-dark">
+                        <div class="card border-0 bg-transparent h-100 galeria-card">
+                            <div class="overflow-hidden rounded-4 shadow-sm mb-3">
+                                <img src="gabinete2.jpg" class="img-fluid demo-img w-100" alt="Monitores">
+                            </div>
+                            <h5 class="fw-bold mb-0">Gabinete Gamer</h5>
+                        </div>
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <a href="COMPONENTE.HTML" class="text-decoration-none text-dark">
+                        <div class="card border-0 bg-transparent h-100 galeria-card">
+                            <div class="overflow-hidden rounded-4 shadow-sm mb-3">
+                                <img src="gabinete3.jpg" class="img-fluid demo-img w-100" alt="Monitores">
+                            </div>
+                            <h5 class="fw-bold mb-0">Gabinetes Led</h5>
+                        </div>
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="PC.HTML" class="text-decoration-none text-dark">
+                        <div class="card border-0 bg-transparent h-100 galeria-card">
+                            <div class="overflow-hidden rounded-4 shadow-sm mb-3">
+                                <img src="gabinete4.jpg" class="img-fluid demo-img w-100" alt="Gamers">
+                            </div>
+                            <h5 class="fw-bold mb-0">Setup Gamer</h5>
+                        </div>
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <a href="COMPONENTE.HTML" class="text-decoration-none text-dark">
+                        <div class="card border-0 bg-transparent h-100 galeria-card">
+                            <div class="overflow-hidden rounded-4 shadow-sm mb-3">
+                                <img src="gabinete personalizado.jpg" class="img-fluid demo-img w-100" alt="Monitores">
+                            </div>
+                            <h5 class="fw-bold mb-0">Gabinetes Personalizado</h5>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+        </section>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="mt-5 pt-4" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="clearfix bg-light p-4 p-md-5 shadow-sm rounded-4 border info-box-hover">
+                <h3 class="fw-bold mb-4 text-dark border-bottom pb-3"><i class="bi bi-info-circle me-2 text-primary"></i>Detalle y Rendimiento</h3>
+                <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=300&h=300&fit=crop" class="img-fluid rounded-4 shadow-sm float-start me-4 mb-3 d-none d-md-block float-img-hover" alt="PC Izquierda" style="max-width: 250px;">
+                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300&h=300&fit=crop" class="img-fluid rounded-4 shadow-sm float-end ms-4 mb-3 d-none d-md-block float-img-hover" alt="Teclado Derecha" style="max-width: 250px;">
+                <p class="lead text-secondary" style="text-align: justify;">
+                    En Doble Click, entendemos que cada componente cuenta. Ensamblamos equipos que mantienen un equilibrio perfecto entre rendimiento bruto y temperaturas controladas.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-auto footer-avanzado" data-aos="fade">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 text-uppercase" style="color:#0d6efd;">💻 Doble Click</h5>
+                    <p>Tu tienda de confianza para computadoras, componentes y servicio técnico especializado.</p>
+                    <div class="mt-4">
+                        <p class="mb-1"><i class="fas fa-phone me-2 text-primary"></i> +591 6452392</p>
+                        <p class="mb-1"><i class="fas fa-envelope me-2 text-primary"></i> DobleClick@Gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 text-uppercase" style="color:#0d6efd;"><i class="fas fa-clock me-2 text-primary"></i>Horarios</h5>
+                    <ul class="list-unstyled lh-lg" style="padding-left:0;">
+                        <li style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 5px;"><strong>Lunes a Viernes:</strong> 09:00 AM - 19:00 PM</li>
+                        <li style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 5px;"><strong>Sábados:</strong> 09:00 AM - 14:00 PM</li>
+                        <li><span class="badge bg-danger mt-2">Domingos y Feriados Cerrado</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="fw-bold mb-3 text-uppercase" style="color:#0d6efd;"><i class="fas fa-map-marker-alt me-2 text-primary"></i>Ubicación</h5>
+                    <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+                        <iframe src="https://maps.google.com/maps?q=lapaz,bolivia&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="mt-2 mb-3 border-secondary">
+            
+            <div class="text-center">
+                <p class="mb-0 small text-light opacity-75">© 2026 Doble Click. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, 
+            offset: 100 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* =========================================
+   ANIMACIONES EXTRA Y HOVERS (Tarjetas)
+   ========================================= */
+.icon-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-hover:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important; 
+}
+
+@keyframes pulseGlow {
+    0% { filter: drop-shadow(0 0 2px rgba(13, 110, 253, 0.4)); }
+    50% { filter: drop-shadow(0 0 10px rgba(13, 110, 253, 0.8)); } 
+    100% { filter: drop-shadow(0 0 2px rgba(13, 110, 253, 0.4)); }
+}
+
+.pulse-animation-btn {
+    animation: pulseGlow 3s infinite; 
+}
+
+/* =========================================
+   SLIDER INFINITO DE MARCAS (CORREGIDO Y ANIMADO)
+   Función: Carrusel continuo de iconos que se mueve solo
+   ========================================= */
+.marcas-slider {
+    width: 100%;
+    overflow: hidden; /* Esto es clave: esconde lo que se sale de la pantalla */
+    white-space: nowrap; /* Evita que los iconos bajen a la siguiente línea */
+    position: relative;
+    padding: 20px 0;
+}
+
+.marcas-track {
+    display: inline-block;
+    /* La animación dura 15 segundos y es lineal (misma velocidad) e infinita */
+    animation: scroll-marcas 15s linear infinite; 
+}
+
+/* Opcional: Pausa la animación si el usuario pone el mouse encima */
+.marcas-track:hover {
+    animation-play-state: paused;
+}
+
+.brand-icon {
+    font-size: 3rem; /* Tamaño de los iconos, los hace grandes y visibles */
+    color: #6c757d; /* Color gris de Bootstrap */
+    margin: 0 40px; /* Separación horizontal entre icono e icono */
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Efecto al pasar el mouse por encima de un icono específico */
+.brand-icon:hover {
+    color: #0d6efd; /* Color azul característico */
+    transform: scale(1.2); /* Lo hace un 20% más grande */
+}
+
+/* Animación que empuja los iconos a la izquierda constantemente */
+@keyframes scroll-marcas {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+    /* Se traslada solo el -50% porque duplicamos los iconos en el HTML */
+}
