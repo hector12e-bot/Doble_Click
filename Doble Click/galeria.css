@@ -1,0 +1,41 @@
+
+/* --- Info Cards --- */
+.info-card {
+    background: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.info-card:hover {
+    transform: translateX(10px);
+    border-color: #0d6efd;
+}
+
+/* --- Animaciones de Galería --- */
+.galeria-card {
+    transition: transform 0.3s ease;
+}
+
+.galeria-card:hover {
+    transform: translateY(-10px);
+}
+
+.demo-img {
+    transition: transform 0.5s ease;
+    object-fit: cover;
+}
+
+.galeria-card:hover .demo-img {
+    transform: scale(1.1);
+}
+
+/* --- Dropdown --- */
+.fade-in-dropdown {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

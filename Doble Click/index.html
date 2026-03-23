@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doble Click | Inicio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/LOGO_DOBLE_CLICK-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comun.css">
+    <style>
+        /* Empujamos el cuerpo de la página para que el menú fijo no tape el video */
+        body {
+            padding-top: 96px; 
+        }
+
+        .navbar .dropdown-menu {
+            z-index: 1050 !important; 
+        }
+
+        .menu-wave {
+            position: absolute; 
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 15px; 
+            overflow: hidden;
+            line-height: 0;
+            z-index: 1019; 
+        }
+        .menu-wave svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .video-hero-container {
+            margin-top: -25px; 
+            position: relative;
+            z-index: 1; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="social-bar pulse-animation">
+        <a href="https://www.facebook.com/" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/" target="_blank" class="icon twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 border-0 fixed-top shadow-sm" style="z-index: 1030;">
+        <div class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="img/LOGO_DOBLE_CLICK-removebg-preview.png" alt="Logo Doble Click" height="60" class="d-inline-block align-text-top logo-nav">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fs-5">
+                    <li class="nav-item mx-2"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarProductos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu shadow border-0 mt-2" aria-labelledby="navbarProductos">
+                            <li><a class="dropdown-item" href="LAPTOP.HTML"><i class="bi bi-laptop me-2"></i>Laptops</a></li>
+                            <li><a class="dropdown-item" href="PC.HTML"><i class="bi bi-pc-display me-2"></i>PCs Armadas</a></li>
+                            <li><a class="dropdown-item" href="COMPONENTE.HTML"><i class="bi bi-cpu me-2"></i>Componentes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item mx-2"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="servicio.html">Servicio Técnico</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="QuienesSomos.html">¿Quiénes somos?</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="menu-wave">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #212529;"></path>
+            </svg>
+        </div>
+    </nav>
+    
+    <div class="video-hero-container">
+        <video class="hero-video" autoplay loop muted playsinline style="width: 100%; object-fit: cover;">
+            <source src="img/video presentacion.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <main class="container my-5 contenido-inicio">
+
+        <div class="text-center mb-5 pb-3" data-aos="fade-down">
+            <h1 class="display-4 fw-bold text-dark mb-3">Bienvenidos a "Doble Click"</h1>
+            <h3 class="fs-4 text-secondary">"Tu próxima gran compra empieza aquí"</h3>
+        </div>
+        
+        <section id="categorias" class="mb-5 pb-5 border-bottom">
+            <h2 class="text-center fw-bold mb-5 text-dark" data-aos="fade-up">Explora Nuestras Categorías Amigas</h2>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="LAPTOP.html" class="categoria-item d-block text-decoration-none icon-hover">
+                        <div class="categoria-circle bg-light border-primary shadow-sm mx-auto mb-3 rounded-circle" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-laptop fs-1 text-primary"></i>
+                        </div>
+                        <span class="fw-semibold text-secondary">Laptops</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="PC.html" class="categoria-item d-block text-decoration-none icon-hover">
+                        <div class="categoria-circle bg-light border-primary shadow-sm mx-auto mb-3 rounded-circle" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-pc-display fs-1 text-primary"></i>
+                        </div>
+                        <span class="fw-semibold text-secondary">PCs</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="COMPONENTE.html" class="categoria-item d-block text-decoration-none icon-hover">
+                        <div class="categoria-circle bg-light border-primary shadow-sm mx-auto mb-3 rounded-circle" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-cpu fs-1 text-primary"></i>
+                        </div>
+                        <span class="fw-semibold text-secondary">Componentes</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-delay="400">
+                    <a href="COMPONENTE.HTML" class="categoria-item d-block text-decoration-none icon-hover">
+                        <div class="categoria-circle bg-light border-primary shadow-sm mx-auto mb-3 rounded-circle" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-tablet fs-1 text-primary"></i>
+                        </div>
+                        <span class="fw-semibold text-secondary">Tablets</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-delay="500">
+                    <a href="COMPONENTE.HTML" class="categoria-item d-block text-decoration-none icon-hover">
+                        <div class="categoria-circle bg-light border-primary shadow-sm mx-auto mb-3 rounded-circle" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-display fs-1 text-primary"></i>
+                        </div>
+                        <span class="fw-semibold text-secondary">Monitores</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-6" data-aos="zoom-in" data-aos-delay="600">
+                    <a href="COMPONENTE.HTML" class="categoria-item d-block text-decoration-none icon-hover">
+                        <div class="categoria-circle bg-light border-primary shadow-sm mx-auto mb-3 rounded-circle" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-headphones fs-1 text-primary"></i>
+                        </div>
+                        <span class="fw-semibold text-secondary">Periféricos</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="americanas" class="mb-5 py-5 bg-light rounded-4 shadow-sm px-4">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <span class="badge bg-danger mb-2 px-3 py-2 shadow-sm">¡Importación Directa!</span>
+                    <h2 class="fw-bold text-dark mb-3">Laptops y Computadoras Americanas</h2>
+                    <p class="lead text-secondary">¿Buscas calidad insuperable? Contamos con un amplio stock de <strong>equipos importados directamente desde Estados Unidos</strong>. Ensamblajes robustos, estándares de calidad internacionales y componentes diseñados para durar años.</p>
+                    <ul class="list-unstyled mt-4 fs-5">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Grado corporativo y profesional.</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Materiales más resistentes.</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Garantía local respaldada por Doble Click.</li>
+                    </ul>
+                    <a href="contactos.html" class="btn btn-primary btn-lg mt-3 rounded-pill px-4 shadow">Consultar Stock Americano <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+                <div class="col-lg-5 mt-4 mt-lg-0" data-aos="fade-left">
+                    <img src="img/COMPUTADORA.jpg" class="img-fluid rounded-4 shadow-lg" alt="Equipos Americanos">
+                </div>
+            </div>
+        </section>
+
+        <section id="marcas" class="mb-5 pb-5 border-bottom text-center bg-light rounded-4 py-4 px-3 overflow-hidden">
+            <h4 class="fw-bold text-secondary mb-4" data-aos="fade-up">Trabajamos con las mejores marcas</h4>
+            <div class="marcas-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="marcas-track">
+                    <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-apple brand-icon" title="Apple"></i></a>
+                    <a href="https://www.microsoft.com/windows" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-windows brand-icon" title="Windows"></i></a>
+                    <a href="https://www.nvidia.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="bi bi-nvidia brand-icon" title="NVIDIA"></i></a>
+                    <a href="https://www.amd.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="bi bi-amd brand-icon" title="AMD"></i></a>
+                    <a href="https://www.linux.org" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-linux brand-icon" title="Linux"></i></a>
+                    <a href="https://ubuntu.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-ubuntu brand-icon" title="Ubuntu"></i></a>
+                    <a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-steam brand-icon" title="Steam"></i></a>
+                    <a href="https://www.google.com/chrome" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-chrome brand-icon" title="Google Chrome"></i></a>
+                    <a href="https://www.android.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-android brand-icon" title="Android"></i></a>
+        
+                    <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-apple brand-icon" title="Apple"></i></a>
+                    <a href="https://www.microsoft.com/windows" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-windows brand-icon" title="Windows"></i></a>
+                    <a href="https://www.nvidia.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="bi bi-nvidia brand-icon" title="NVIDIA"></i></a>
+                    <a href="https://www.amd.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="bi bi-amd brand-icon" title="AMD"></i></a>
+                    <a href="https://www.linux.org" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-linux brand-icon" title="Linux"></i></a>
+                    <a href="https://ubuntu.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-ubuntu brand-icon" title="Ubuntu"></i></a>
+                    <a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-steam brand-icon" title="Steam"></i></a>
+                    <a href="https://www.google.com/chrome" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-chrome brand-icon" title="Google Chrome"></i></a>
+                    <a href="https://www.android.com" target="_blank" rel="noopener noreferrer" class="brand-link"><i class="fa-brands fa-android brand-icon" title="Android"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="destacados" class="mb-5">
+            <h2 class="text-center fw-bold mb-5 text-dark" data-aos="fade-up">Descubre Lo Último en 'Doble Click'</h2>
+            <div class="row g-4">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card producto-card shadow h-100 border-0 icon-hover">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-2">PC Gamer 'Trueno'</h3>
+                            <p class="text-muted small mb-3">Tu próximo nivel te espera. Rendimiento puro para tus juegos favoritos.</p>
+                            <img src="https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?w=500&h=300&fit=crop" class="img-fluid rounded mb-3" alt="PC Gamer Trueno">
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fs-4 fw-bold text-primary">8,500 Bs.</span>
+                                <a href="PC.html" class="btn btn-outline-primary btn-sm rounded-pill stretched-link">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card producto-card shadow h-100 border-0 icon-hover">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-2">Laptop 'Doble Flex' 14"</h3>
+                            <p class="text-muted small mb-3">Tu compañera de estudio definitiva. Ligera, potente y con batería para todo el día.</p>
+                            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=500&h=300&fit=crop" class="img-fluid rounded mb-3" alt="Laptop Doble Flex">
+                             <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fs-4 fw-bold text-primary">4,000 Bs.</span>
+                                <a href="LAPTOP.html" class="btn btn-outline-primary btn-sm rounded-pill stretched-link">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card producto-card shadow h-100 border-0 icon-hover">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-2">Pack 'Bestia' Upgrade</h3>
+                            <p class="text-muted small mb-3">Dale nueva vida a tu PC. Motherboard + CPU + RAM de alto rendimiento en un pack.</p>
+                            <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=500&h=300&fit=crop" class="img-fluid rounded mb-3" alt="Pack Bestia Componentes">
+                             <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fs-4 fw-bold text-primary">5,400 Bs.</span>
+                                <a href="COMPONENTE.html" class="btn btn-outline-primary btn-sm rounded-pill stretched-link">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="mb-5 py-5">
+            <h2 class="text-center fw-bold mb-5 text-dark" data-aos="fade-up">Lo que dicen nuestros clientes</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card bg-light border-0 shadow-sm h-100 testimonio-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-person-circle fs-1 text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-0 fw-bold">Carlos M.</h5>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-secondary fst-italic mb-0">"Armé mi PC Gamer con ellos y el asesoramiento fue espectacular. Todo rinde al 100% y me ayudaron a elegir justo lo que necesitaba sin gastar de más."</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card bg-light border-0 shadow-sm h-100 testimonio-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-person-circle fs-1 text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-0 fw-bold">Laura S.</h5>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-secondary fst-italic mb-0">"Llevé mi laptop porque estaba súper lenta. El servicio técnico le hizo limpieza y le puso un disco sólido. ¡Ahora vuela! Excelente atención."</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+                    <div class="card bg-light border-0 shadow-sm h-100 testimonio-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-person-circle fs-1 text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-0 fw-bold">Javier R.</h5>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-secondary fst-italic mb-0">"Compré una laptop americana para la universidad y la calidad se nota. Llegó rápido y en perfecto estado. 100% recomendados."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ventajas" class="mt-5 text-center">
+            <h2 class="fw-bold mb-5 text-dark" data-aos="fade-up">¿Por qué comprar en Doble Click?</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 icon-hover">
+                        <i class="bi bi-shield-check text-primary mb-3 d-block" style="font-size: 3rem;"></i>
+                        <h4 class="fw-bold">Garantía Real</h4>
+                        <p class="text-secondary mb-0">Todos nuestros equipos nuevos y americanos cuentan con garantía técnica directamente en nuestra tienda.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 icon-hover">
+                        <i class="bi bi-tools text-primary mb-3 d-block" style="font-size: 3rem;"></i>
+                        <h4 class="fw-bold">Servicio Técnico</h4>
+                        <p class="text-secondary mb-0">No solo vendemos. Tenemos el mejor equipo de técnicos para mantenimiento, reparación y limpieza de tus PCs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 icon-hover">
+                        <i class="bi bi-truck text-primary mb-3 d-block" style="font-size: 3rem;"></i>
+                        <h4 class="fw-bold">Envíos Seguros</h4>
+                        <p class="text-secondary mb-0">Hacemos entregas a domicilio y envíos seguros a nivel nacional con empaque de alta protección.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-auto footer-avanzado">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 text-uppercase" style="color:#0d6efd;">💻 Doble Click</h5>
+                    <p>Tu tienda de confianza para computadoras, componentes y servicio técnico especializado.</p>
+                    <div class="mt-4">
+                        <p class="mb-1"><i class="fas fa-phone me-2"></i> +591 6452392</p>
+                        <p class="mb-1"><i class="fas fa-envelope me-2"></i> DobleClick@Gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 text-uppercase" style="color:#0d6efd;"><i class="fas fa-clock me-2"></i>Horarios</h5>
+                    <ul class="list-unstyled lh-lg" style="padding-left:0;">
+                        <li style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 5px;"><strong>Lunes a Viernes:</strong> 09:00 AM - 19:00 PM</li>
+                        <li style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 5px;"><strong>Sábados:</strong> 09:00 AM - 14:00 PM</li>
+                        <li><span class="badge bg-danger">Domingos y Feriados Cerrado</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="fw-bold mb-3 text-uppercase" style="color:#0d6efd;"><i class="fas fa-map-marker-alt me-2"></i>Ubicación</h5>
+                    <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+                        <iframe src="https://maps.google.com/maps?q=lapaz,bolivia&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="mt-2 mb-3 border-secondary">
+            
+            <div class="text-center">
+                <p class="mb-0 small text-light">© 2026 Doble Click. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 800, 
+            once: true,    
+            offset: 100    
+        });
+    </script>
+</body>
+</html>
